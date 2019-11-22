@@ -54,3 +54,21 @@ func guruHere(_ name:String, _ number:Int){
 }
 
 guruHere("james", 23)
+
+
+// Functions with return statements
+
+func jamesScore() ->(Int){
+    var initialScore = 0
+    return initialScore
+}
+print("james' score is \(jamesScore())" )
+
+func jamesUpdatedScore(_ initialScore:Int, _ score:Int) -> Int{
+    var newScore = initialScore + score
+    return newScore
+}
+
+var res = jamesUpdatedScore(0, 23)
+print("new Score \(res)")
+
