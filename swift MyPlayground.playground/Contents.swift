@@ -16,3 +16,41 @@ var i = 0.2
 
 // i = "james" Cannot assign value of type 'String' to type 'Double'
 print(i)
+
+
+// fuctions
+
+
+// Basic function
+func jamesFunction(){
+    print("James is a guru")
+}
+jamesFunction()
+
+//funtion with parameters
+func jamesNisan(number:Int){
+    print(number)
+}
+
+jamesNisan(number: 23)
+
+func jamesNissan(number:Int){
+    print("James \(number) is a guru")
+}
+jamesNissan(number: 23)
+
+// Multiple parameters
+
+func jamesSwiftGuru(name:String, number:Int, stack:String){
+    print("\(name) \(number) is a \(stack) Guru")
+}
+jamesSwiftGuru(name: "James", number: 23, stack: "Swift")
+
+
+// Omitting the arguement label
+
+func guruHere(_ name:String, _ number:Int){
+    print("\(name) \(number)")
+}
+
+guruHere("james", 23)
