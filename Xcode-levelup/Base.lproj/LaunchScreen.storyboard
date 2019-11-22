@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobbg" translatesAutoresizingMaskIntoConstraints="NO" id="zg3-7H-Oha">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobbg" translatesAutoresizingMaskIntoConstraints="NO" id="zg3-7H-Oha">
                                 <rect key="frame" x="20" y="20" width="374" height="856"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="website" translatesAutoresizingMaskIntoConstraints="NO" id="d8u-WL-Dgf">
@@ -27,7 +27,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="PLv-M2-6wT" userLabel="cards and button Stack View">
                                 <rect key="frame" x="101.5" y="363.5" width="211" height="209.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ARC-mj-dLr" userLabel="cards Stack View">
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ARC-mj-dLr" userLabel="cards Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="211" height="139.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="Air-ao-Al0">
@@ -64,7 +64,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="x9d-c9-5QK">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="x9d-c9-5QK" userLabel="CPU Stack View">
                                 <rect key="frame" x="339.5" y="713.5" width="34.5" height="68.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-u7-FZn">
@@ -87,13 +87,17 @@
                             <constraint firstItem="zg3-7H-Oha" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="5Ri-yg-lW8"/>
                             <constraint firstAttribute="bottom" secondItem="zg3-7H-Oha" secondAttribute="bottom" constant="20" symbolic="YES" id="6a5-1j-nfZ"/>
                             <constraint firstItem="qO9-or-1D9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Baz-tm-m2W"/>
-                            <constraint firstItem="d8u-WL-Dgf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Hif-n7-tjX"/>
+                            <constraint firstItem="d8u-WL-Dgf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Hif-n7-tjX">
+                                <variation key="heightClass=compact-widthClass=regular" constant="2"/>
+                            </constraint>
                             <constraint firstItem="zg3-7H-Oha" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="20" symbolic="YES" id="OkR-mr-2EN"/>
                             <constraint firstItem="d8u-WL-Dgf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="col-ix-gbp"/>
                             <constraint firstAttribute="trailing" secondItem="zg3-7H-Oha" secondAttribute="trailing" constant="20" symbolic="YES" id="frx-QR-Sdp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x9d-c9-5QK" secondAttribute="bottom" constant="80" id="hyJ-OI-afG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qO9-or-1D9" secondAttribute="bottom" constant="80" id="kB0-Rf-Gah"/>
-                            <constraint firstItem="PLv-M2-6wT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="20" id="q2s-pe-LfF"/>
+                            <constraint firstItem="PLv-M2-6wT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="20" id="q2s-pe-LfF">
+                                <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                            </constraint>
                             <constraint firstItem="PLv-M2-6wT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rh0-yz-P4U"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x9d-c9-5QK" secondAttribute="trailing" constant="40" id="xSr-6E-99k"/>
                         </constraints>
