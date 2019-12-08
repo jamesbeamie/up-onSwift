@@ -60,7 +60,8 @@ guruHere("james", 23)
 
 func jamesScore() ->(Int){
     var initialScore = 0
-    return initialScore
+    var theScore = initialScore + 2;
+    return theScore
 }
 print("james' score is \(jamesScore())" )
 
@@ -71,4 +72,30 @@ func jamesUpdatedScore(_ initialScore:Int, _ score:Int) -> Int{
 
 var res = jamesUpdatedScore(0, 23)
 print("new Score \(res)")
+
+
+// Swift Classes
+class Landrover{
+    
+    //class variable
+    var mainName = "Landrover";
+    
+    func discovery(_ disco: String) ->(String){
+        
+        //func variable
+        var machine = "discovery"
+        print("The all new \(mainName) \(machine) \(disco)");
+        return disco;
+    }
+    func rangeRover(_ rover: String) ->(String){
+        
+        //func variable
+        var machine = "Range Rover"
+        print("The all new \(mainName) \(machine) \(rover)");
+        return rover;
+    }
+}
+var ita = Landrover()
+ita.discovery("Four")
+ita.rangeRover("Sport")
 
