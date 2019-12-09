@@ -95,6 +95,8 @@ class Landrover{
         return rover;
     }
 }
+
+//object or instance of a class
 var ita = Landrover()
 ita.discovery("Four")
 ita.rangeRover("Sport")
