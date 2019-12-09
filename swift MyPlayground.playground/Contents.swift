@@ -17,10 +17,17 @@ var i = 0.2
 // i = "james" Cannot assign value of type 'String' to type 'Double'
 print(i)
 
+//Arrays
 
-// fuctions
+var Jaguarover = ["Defender", "Discovery","Rover"]
+print("In Jaguar Landrover \(Jaguarover[0])")
+Jaguarover.append("Freelander")
+
+print(Jaguarover)
 
 
+
+// FUNCTIONS
 // Basic function
 func jamesFunction(){
     print("James is a guru")
@@ -74,6 +81,7 @@ var res = jamesUpdatedScore(0, 23)
 print("new Score \(res)")
 
 
+
 // Swift Classes
 class Landrover{
     
@@ -100,4 +108,28 @@ class Landrover{
 var ita = Landrover()
 ita.discovery("Four")
 ita.rangeRover("Sport")
+
+
+
+// Arrays in classes
+
+class RMA{
+    func Jaguar(_ newJaguar: String) ->Array<String>{
+        var allJaguars = ["Xj","Xk","Xf","F-pace","I-pace"]
+       allJaguars.append(newJaguar)
+        print("All Jaguars \(allJaguars)")
+        return allJaguars
+    }
+    func Landrover(_ newRover: String) ->Array<String>{
+        var allLandRovers = ["Defender"]
+        allLandRovers.append(newRover)
+        print("All Rovers \(allLandRovers)")
+        return allLandRovers
+    }
+}
+
+var westie = RMA()
+westie.Jaguar("Truck")
+westie.Landrover("Discovery")
+
 
