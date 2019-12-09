@@ -1,7 +1,7 @@
 import UIKit
 
 
-// variables annd constants
+// variables and constants
 var intro:String = "Up on swift"
 // var intro:String = 2 Cannot convert value of type 'Int' to specified type 'String'
 print(intro)
@@ -131,5 +131,33 @@ class RMA{
 var westie = RMA()
 westie.Jaguar("Truck")
 westie.Landrover("Discovery")
+
+
+
+// COURSE OUTLINE
+
+//Data Types
+//Variables
+//Arrays
+    //append
+    //delete
+    //fetch
+    //sort
+    //reverse
+//Dictionaries
+//  CONDITIONS AND LOOPS
+    //for
+    //while
+    //if... else
+    //Do while
+//Functions
+    //Function scope
+//Classes
+//OOP
+//Inheritance
+//Abstraction
+//Polymophism
+
+
 
 
